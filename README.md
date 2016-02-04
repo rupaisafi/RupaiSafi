@@ -1,0 +1,2 @@
+# RupaiSafi
+Determination | Discipline | Willfullness
