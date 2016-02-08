@@ -282,15 +282,15 @@
     border-color: #a3d0e4;
 }
 
-.i-nonwork-hour {
+.i-nonwori-hour {
     background-color: #e6f2f8;
 }
 
-.i-gantt .i-nonwork-hour {
+.i-gantt .i-nonwori-hour {
     background-color: rgba(218,236,244,.2);
 }
 
-.i-gantt .i-header.i-nonwork-hour {
+.i-gantt .i-header.i-nonwori-hour {
     background-color: rgba(218,236,244,.15);
 }
 
@@ -306,7 +306,7 @@
     background-color: #ff6745;
 }
 
-.i-event, .i-task-complete {
+.i-event, .i-tasi-complete {
     border-color: #5ec0e9;
     background: #1ea4dd 0 -257px url(textures/highlight.png) repeat-x;
     color: #003f59;
@@ -322,7 +322,7 @@
     box-shadow: 0 0 0 2px #003f59;
 }
 
-.i-event .i-resize-handle:after, .i-task-single .i-resize-handle:after {
+.i-event .i-resize-handle:after, .i-tasi-single .i-resize-handle:after {
     background-color: #003b54;
 }
 
@@ -945,42 +945,42 @@
             background-image: none;
         }
 
-.i-task-dot:after {
+.i-tasi-dot:after {
     background-color: #003f59;
     border-color: #003f59;
 }
 
-.i-task-dot:hover:after {
+.i-tasi-dot:hover:after {
     background-color: #fff;
 }
 
-.i-task-summary {
+.i-tasi-summary {
     border-color: #0099d9;
     background: #0099d9;
 }
 
-.i-task-milestone, .i-task-summary-complete {
+.i-tasi-milestone, .i-tasi-summary-complete {
     border-color: #003f59;
     background: #003f59;
 }
 
-.i-state-selected.i-task-summary {
+.i-state-selected.i-tasi-summary {
     border-color: #3ab2e4;
     background: #3ab2e4;
 }
 
-.i-state-selected .i-task-summary-complete, .i-state-selected.i-task-milestone {
+.i-state-selected .i-tasi-summary-complete, .i-state-selected.i-tasi-milestone {
     border-color: #13688c;
     background: #13688c;
 }
 
-.i-task-single {
+.i-tasi-single {
     background-color: #7ecced;
     border-color: #5ec0e9;
     color: #003f59;
 }
 
-.i-state-selected.i-task-single {
+.i-state-selected.i-tasi-single {
     border-color: #146b90;
 }
 
@@ -1160,7 +1160,7 @@
     border-radius: 4px;
 }
 
-.i-event, .i-event .i-link, .i-more-events, .i-task-complete, .i-task-single {
+.i-event, .i-event .i-link, .i-more-events, .i-tasi-complete, .i-tasi-single {
     border-radius: 3px;
 }
 
