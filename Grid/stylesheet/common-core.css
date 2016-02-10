@@ -1,0 +1,68 @@
+﻿.i-grid {
+    outline: 0 none;
+    position: relative;
+}
+
+.i-widget {
+    outline: 0 none;
+    border-width: 1px;
+    border-style: solid;
+    line-height: normal;
+    box-sizing: content-box;
+}
+
+    .i-widget * {
+        box-sizing: content-box;
+    }
+
+        .i-widget *::before {
+            box-sizing: content-box;
+        }
+
+.i-header {
+    background-position: 0 center;
+    background-repeat: repeat;
+}
+
+.i-grid-toolbar {
+    margin: 0;
+    display: block;
+    cursor: default;
+    border-style: solid;
+    padding: 0.22em 0.2em 0.28em;
+}
+
+    .i-grid-toolbar::after {
+        clear: both;
+        content: "";
+        display: block;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+    .i-grid-toolbar:first-child,
+    .i-grouping-header + .i-grid-toolbar {
+        border-width: 0 0 1px;
+    }
+
+.i-grid-header {
+}
+
+.i-grid-content {
+}
+
+.i-auto-scrollable {
+}
+
+.i-pager-wrap {
+}
+
+.i-grid-pager {
+}
+
+.i-widget {
+}
+
+.i-floatwrap {
+}

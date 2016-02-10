@@ -1,0 +1,4 @@
+﻿.i-tooltip {
+    background-repeat: repeat;
+    background-position: 0 center;
+}

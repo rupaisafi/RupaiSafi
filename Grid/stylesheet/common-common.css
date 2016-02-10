@@ -1,0 +1,20 @@
+﻿.i-state-disabled, 
+.i-state-disabled .i-button, 
+.i-state-disabled .i-draghandle, 
+.i-state-disabled .i-icon, 
+.i-state-disabled .i-link, 
+.i-state-disabled .i-upload-button input {
+    cursor: default !important;
+    outline: 0;
+}
+
+
+@media print {
+    .i-state-disabled, .i-state-disabled .i-input {
+        opacity: 1 !important;
+    }
+}
+
+.i-state-error {
+    border-style: ridge;
+}

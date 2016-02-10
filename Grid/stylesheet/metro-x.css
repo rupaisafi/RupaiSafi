@@ -277,15 +277,15 @@
     border-color: #dbdbdb;
 }
 
-.i-nonwori-hour {
+.i-nonwork-hour {
     background-color: #f5f5f5;
 }
 
-.i-gantt .i-nonwori-hour {
+.i-gantt .i-nonwork-hour {
     background-color: rgba(0,0,0,.02);
 }
 
-.i-gantt .i-header.i-nonwori-hour {
+.i-gantt .i-header.i-nonwork-hour {
     background-color: rgba(0,0,0,.2);
 }
 
@@ -301,7 +301,7 @@
     background-color: #e20000;
 }
 
-.i-event, .i-tasi-complete {
+.i-event, .i-task-complete {
     border-color: #7ea700;
     background: #7ea700 0 -257px none repeat-x;
     color: #fff;
@@ -317,7 +317,7 @@
     box-shadow: 0 0 0 2px #787878;
 }
 
-.i-event .i-resize-handle:after, .i-tasi-single .i-resize-handle:after {
+.i-event .i-resize-handle:after, .i-task-single .i-resize-handle:after {
     background-color: #787878;
 }
 
@@ -909,42 +909,42 @@
             background-color: #8ebc00;
         }
 
-.i-tasi-dot:after {
+.i-task-dot:after {
     background-color: #787878;
     border-color: #787878;
 }
 
-.i-tasi-dot:hover:after {
+.i-task-dot:hover:after {
     background-color: #fff;
 }
 
-.i-tasi-summary {
+.i-task-summary {
     border-color: #383838;
     background: #383838;
 }
 
-.i-tasi-milestone, .i-tasi-summary-complete {
+.i-task-milestone, .i-task-summary-complete {
     border-color: #787878;
     background: #787878;
 }
 
-.i-state-selected.i-tasi-summary {
+.i-state-selected.i-task-summary {
     border-color: #1e2800;
     background: #1e2800;
 }
 
-.i-state-selected .i-tasi-summary-complete, .i-state-selected.i-tasi-milestone {
+.i-state-selected .i-task-summary-complete, .i-state-selected.i-task-milestone {
     border-color: #7ea700;
     background: #7ea700;
 }
 
-.i-tasi-single {
+.i-task-single {
     background-color: #99cb00;
     border-color: #7ea700;
     color: #fff;
 }
 
-.i-state-selected.i-tasi-single {
+.i-state-selected.i-task-single {
     border-color: #7ea700;
 }
 
@@ -1120,7 +1120,7 @@
     border-radius: 0;
 }
 
-.i-event, .i-event .i-link, .i-more-events, .i-tasi-complete, .i-tasi-single {
+.i-event, .i-event .i-link, .i-more-events, .i-task-complete, .i-task-single {
     border-radius: 0;
 }
 

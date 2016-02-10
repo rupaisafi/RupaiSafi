@@ -1,0 +1,32 @@
+﻿.i-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+}
+.i-autocomplete, 
+.i-autocomplete.i-state-hover, 
+.i-block, 
+.i-button, 
+.i-draghandle, 
+.i-dropdown-wrap, 
+.i-dropdown-wrap.i-state-hover, 
+.i-grid-header, 
+.i-grouping-header, 
+.i-header, 
+.i-link.i-state-hover, 
+.i-numeric-wrap, 
+.i-numeric-wrap.i-state-hover, 
+.i-pager-wrap, 
+.i-picker-wrap, 
+.i-picker-wrap.i-state-hover, 
+.i-tabstrip-items .i-item, 
+.i-textbox, .i-textbox:hover, 
+.i-toolbar, 
+.i-tooltip {
+    background-repeat: repeat;
+    background-position: 0 center;
+}

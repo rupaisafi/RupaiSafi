@@ -3,9 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>IQra :: User Interface</title>
-    <link href="stylesheet/indexer.css" rel="stylesheet" />
-    <link href="stylesheet/common.css" rel="stylesheet" />
-    <link id="theme" href="stylesheet/material.css" rel="stylesheet" />
+    <link href="stylesheet/index-x.css" rel="stylesheet" />
+    <link href="stylesheet/common-x.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width" />
 </head>
 <body>
@@ -21,7 +20,7 @@
                 <option value="stylesheet/highcontrast.css">HighContrast</option>
                 <option value="stylesheet/material.css">Material</option>
                 <option value="stylesheet/materialblack.css">MaterialBlack</option>
-                <option value="stylesheet/metro.css">Metro</option>
+                <option selected="selected" value="stylesheet/metro.css">Metro</option>
                 <option value="stylesheet/metroblack.css">MetroBlack</option>
                 <option value="stylesheet/moonlight.css">Moonlight</option>
                 <option value="stylesheet/nova.css">Nova</option>
@@ -34,78 +33,146 @@
         <div class="page-l-side"></div>
         <div class="page-c-main">
             <div class="main-wrap">
-                <div id="rowSelection" data-role="grid" class="i-grid i-widget">
-                    <table role="grid" tabindex="0" data-role="selectable" class="i-selectable" aria-multiselectable="true" aria-activedescendant="rowSelection_active_cell">
-                        <colgroup>
-                            <col style="width:300px">
-                            <col style="width:300px">
-                            <col>
-                        </colgroup>
-                        <thead class="i-grid-header" role="rowgroup">
-                            <tr role="row">
-                                <th id="rowSelection_active_cell" data-index="0" data-title="Ship Country" rowspan="1" data-field="ShipCountry" role="columnheader" scope="col" class="i-header" aria-describedby="rowSelection_active_cell">Ship Country</th>
-                                <th data-index="1" rowspan="1" data-field="Freight" role="columnheader" scope="col" class="i-header">Freight</th>
-                                <th data-index="2" data-title="Order Date" rowspan="1" data-field="OrderDate" role="columnheader" scope="col" class="i-header">Order Date</th>
-                            </tr>
-                        </thead>
-                        <tbody role="rowgroup">
-                            <tr role="row" data-uid="6956ec79-1483-47ab-b1cc-8f56f2e444f8">
-                                <td role="gridcell">France</td>
-                                <td role="gridcell">32.38</td>
-                                <td role="gridcell">04/07/1996</td>
-                            </tr>
-                            <tr role="row" data-uid="c35a263d-5383-4b38-ba44-03f392a938bd" class="i-alt">
-                                <td role="gridcell">Germany</td>
-                                <td role="gridcell">11.61</td>
-                                <td role="gridcell">05/07/1996</td>
-                            </tr>
-                            <tr role="row" data-uid="3986e37a-956e-4b11-9b96-2b0016724df8" class="i-state-selected" aria-selected="true">
-                                <td role="gridcell">Brazil</td>
-                                <td role="gridcell" class="">65.83</td>
-                                <td role="gridcell">08/07/1996</td>
-                            </tr>
-                            <tr role="row" data-uid="ce44b9b5-3ed4-421f-b2b7-175fe47e8d72" class="i-alt">
-                                <td role="gridcell">France</td>
-                                <td role="gridcell">41.34</td>
-                                <td role="gridcell">08/07/1996</td>
-                            </tr>
-                            <tr role="row" data-uid="8cc4b498-222f-4b50-a340-648d33d14795">
-                                <td role="gridcell">Belgium</td>
-                                <td role="gridcell">51.3</td>
-                                <td role="gridcell">09/07/1996</td>
-                            </tr>
-                            <tr role="row" data-uid="b2d6577e-7767-4606-876e-ccf761e92f86" class="i-alt">
-                                <td role="gridcell">Brazil</td>
-                                <td role="gridcell">58.17</td>
-                                <td role="gridcell">10/07/1996</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div id="grid" data-role="grid" class="i-grid i-widget" style="">
+                    <div class="i-header i-grid-toolbar">
+                        <button> Add New </button><span>  </span>
+                        <button> Add New </button><span>  </span>
+                        <button> Add New </button><span>  </span>
+                    </div>
+                    <div class="i-grid-header" style="padding-right: 17px;">
+                        <div class="i-grid-header-wrap i-auto-scrollable" data-role="resizable">
+                            <table role="grid">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead role="rowgroup">
+                                    <tr role="row">
+                                        <th id="2375ec3e-8180-4671-bc7c-d5924f0cfca2" data-index="0" data-title="Contact Name" rowspan="1" data-field="ContactName" role="columnheader" scope="col" class="i-header i-with-icon i-filterable" data-role="columnsorter">
+                                            <a href="#" class="i-grid-filter" tabindex="-1">
+                                                <span class="i-icon i-filter">Filter</span>
+                                            </a>
+                                            <a href="#" class="i-link">Contact Name</a>
+                                        </th>
+                                        <th id="30ce6e8d-edb7-4912-bf51-e882a0c35029" data-index="1" data-title="Contact Title" rowspan="1" data-field="ContactTitle" role="columnheader" scope="col" class="i-header i-with-icon i-filterable" data-role="columnsorter">
+                                            <a href="#" class="i-grid-filter" tabindex="-1">
+                                                <span class="i-icon i-filter">Filter</span>
+                                            </a>
+                                            <a href="#" class="i-link">Contact Title</a>
+                                        </th>
+                                        <th id="6f015bd5-7938-4752-9b30-b048ae0a0c87" data-index="2" data-title="Company Name" rowspan="1" data-field="CompanyName" role="columnheader" scope="col" class="i-header i-with-icon i-filterable" data-role="columnsorter">
+                                            <a href="#" class="i-grid-filter" tabindex="-1">
+                                                <span class="i-icon i-filter">Filter</span>
+                                            </a>
+                                            <a href="#" class="i-link">Company Name</a>
+                                        </th>
+                                        <th id="522bbe7b-fe89-403c-a492-b606cb72f084" data-index="3" data-title="Country Name" rowspan="1" data-field="Country" role="columnheader" scope="col" class="i-header i-with-icon i-filterable" data-role="columnsorter">
+                                            <a href="#" class="i-grid-filter" tabindex="-1">
+                                                <span class="i-icon i-filter">Filter</span>
+                                            </a>
+                                            <a href="#" class="i-link">Country Name</a>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="i-resize-handle" style="top: 0px; left: 645px; height: 32px; width: 9px; display: none;"><div class="i-resize-handle-inner"></div></div>
+                        </div>
+                    </div>
+                    <div class="i-grid-content i-auto-scrollable">
+                        <table role="grid" data-role="selectable" class="i-selectable">
+                            <colgroup><col><col><col><col></colgroup>
+                            <tbody role="rowgroup">
+                                <tr role="row" data-uid="c510568f-7686-4b77-90d7-4e27151360c4">
+                                    <td role="gridcell"><span>ContactName</span></td>
+                                    <td role="gridcell"><span>ContactTitle</span></td>
+                                    <td role="gridcell"><span>CompanyName</span></td>
+                                    <td role="gridcell">
+                                        <span><a href="#" class="i-link">CountryName</a></span>
+                                    </td>
+                                </tr>
+                                <tr role="row" data-uid="500b7920-84d9-42b8-887c-57df86a27e13" class="i-alt">
+                                    <td role="gridcell"><span>ContactName</span></td>
+                                    <td role="gridcell"><span>ContactTitle</span></td>
+                                    <td role="gridcell"><span>CompanyName</span></td>
+                                    <td role="gridcell">
+                                        <span>CountryName</span>
+                                    </td>
+                                </tr>
+                                <tr role="row" data-uid="e826586f-8eb1-4935-ac36-2507c57a6bc1">
+                                    <td role="gridcell"><span>ContactName</span></td>
+                                    <td role="gridcell"><span>ContactTitle</span></td>
+                                    <td role="gridcell"><span>CompanyName</span></td>
+                                    <td role="gridcell">
+                                        <span>CountryName</span>
+                                    </td>
+                                </tr>
+                                <tr role="row" data-uid="2a310a0d-5a5a-4d90-b75d-bc3df896931e" class="i-alt">
+                                    <td role="gridcell"><span>ContactName</span></td>
+                                    <td role="gridcell"><span>ContactTitle</span></td>
+                                    <td role="gridcell"><span>CompanyName</span></td>
+                                    <td role="gridcell">
+                                        <span>CountryName</span>
+                                    </td>
+                                </tr>
+                                <tr role="row" data-uid="53eb734e-70cf-467d-b7fe-95f53337a889">
+                                    <td role="gridcell"><span>ContactName</span></td>
+                                    <td role="gridcell"><span>ContactTitle</span></td>
+                                    <td role="gridcell"><span>CompanyName</span></td>
+                                    <td role="gridcell">
+                                        <span>CountryName</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div class="i-pager-wrap i-grid-pager i-widget i-floatwrap" data-role="pager">
-                        <a class="i-link i-pager-nav i-pager-first i-state-disabled" title="Go to the first page" href="javascript:void(0);" data-page="1" tabindex="-1">
+                        <a class="i-link i-pager-nav i-pager-first i-state-disabled" title="Go to the first page" href="#" data-page="1" tabindex="-1">
                             <span class="i-icon i-i-seek-w">Go to the first page</span>
                         </a>
-                        <a class="i-link i-pager-nav  i-state-disabled" title="Go to the previous page" javascript:void(0); data-page="1" tabindex="-1">
+                        <a class="i-link i-pager-nav  i-state-disabled" title="Go to the previous page" href="#" data-page="1" tabindex="-1">
                             <span class="i-icon i-i-arrow-w">Go to the previous page</span>
-                        </a>
-                        <ul class="i-pager-numbers i-reset">
-                            <li class="i-current-page"><span class="i-link i-pager-nav">1</span></li>
-                            <li><span class="i-state-selected">1</span></li>
-                            <li><a data-page="2" class="i-link" javascript:void(0); tabindex="-1">2</a></li>
-                            <li><a data-page="3" class="i-link" javascript:void(0); tabindex="-1">3</a></li>
-                            <li><a data-page="4" class="i-link" javascript:void(0); tabindex="-1">4</a></li>
-                            <li><a data-page="5" class="i-link" javascript:void(0); tabindex="-1">5</a></li>
+                        </a><ul class="i-pager-numbers i-reset">
+                            <li class="i-current-page">
+                                <span class="i-link i-pager-nav">1</span>
+                            </li>
                             <li>
-                                <a title="More pages" data-page="6" class="i-link" javascript:void(0); tabindex="-1">...</a>
+                                <span class="i-state-selected">1</span>
+                            </li>
+                            <li>
+                                <a data-page="2" class="i-link" href="#" tabindex="-1">2</a>
+                            </li>
+                            <li>
+                                <a data-page="3" class="i-link" href="#" tabindex="-1">3</a>
+                            </li>
+                            <!--<li>
+                                <a data-page="4" class="i-link" href="#" tabindex="-1">4</a>
+                            </li>
+                            <li>
+                                <a data-page="5" class="i-link" href="#" tabindex="-1">5</a>
+                            </li>-->
+                            <li>
+                                <a title="More pages" data-page="6" class="i-link" href="#" tabindex="-1">...</a>
                             </li>
                         </ul>
-                        <a class="i-link i-pager-nav" title="Go to the next page" javascript:void(0); data-page="2" tabindex="-1">
-                            <span class="i-icon i-i-arrow-e">Go to the next page</span>
-                        </a>
-                        <a class="i-link i-pager-nav i-pager-last" title="Go to the last page" href="javascript:void(0)">
+                        <a class="i-link i-pager-nav" title="Go to the next page" href="#" data-page="2" tabindex="-1"><span class="i-icon i-i-arrow-e">Go to the next page</span></a><a class="i-link i-pager-nav i-pager-last" title="Go to the last page" href="#" data-page="12" tabindex="-1">
                             <span class="i-icon i-i-seek-e">Go to the last page</span>
                         </a>
-                        <span class="i-pager-info i-label">1 - 6 of 830 items</span>
+                        <span class="i-pager-sizes i-label">
+                            <span style="" title="" class="i-widget i-dropdown i-header" unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="" aria-disabled="false" aria-readonly="false" aria-busy="false" aria-activedescendant="6003d4ac-3f13-40d6-b83c-e9194ace5412">
+                                <span class="i-dropdown-wrap i-state-default" unselectable="on"><span class="i-input" unselectable="on">8</span><span class="i-select" unselectable="on"><span class="i-icon i-i-arrow-s" unselectable="on">select</span></span></span><select data-role="dropdownlist" style="display: none;">
+                                    <option value="all">All</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                </select>
+                            </span>PerPage
+                        </span>
+                        <a title="Refresh" class="i-pager-refresh i-link" href="#">
+                            <span class="i-icon i-i-refresh">Refresh</span>
+                        </a>
+                        <span class="i-pager-info i-label">1 - 8 of 91 items</span>
                     </div>
                 </div>
             </div>
@@ -113,6 +180,11 @@
         <div class="page-r-side"></div>
     </div>
     <div class="page-foot"></div>
-    <script src="javascript/indexer.js"></script>
+    <script src="javascript/index-x.js"></script>
 </body>
 </html>
+
+
+
+
+
