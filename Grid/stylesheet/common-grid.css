@@ -2296,9 +2296,9 @@ div.i-grid-footer, div.i-grid-header {
 
 
 
-.i-pager-numbers .i-current-page {
+/*.i-pager-numbers .i-current-page {
         display: none;
-    }
+    }*/
 
 .i-pager-input, .i-pager-numbers li {
         float: left;
