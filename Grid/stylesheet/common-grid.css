@@ -1,12 +1,12 @@
-﻿
-
-
-
-
-
-
-
-
+﻿.i-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+}
 
 .i-grid-header,
 .i-grouping-header,
@@ -262,7 +262,6 @@
 
 
 
-
 .i-i-arrow-w {
     background-position: 0 -48px;
 }
@@ -286,10 +285,10 @@
 
 
 
+
 .i-i-seek-e {
     background-position: 0 -80px;
 }
-
 
 
 
@@ -487,8 +486,9 @@
 
 
 
-
-
+.i-filter, .i-i-funnel {
+    background-position: -32px -80px;
+}
 
 
 
@@ -521,7 +521,6 @@
 .i-i-refresh {
     background-position: -32px -112px;
 }
-
 
 
 
@@ -1999,7 +1998,20 @@
 
 
 
+.i-filter-row th, .i-grid-header th.i-header {
+    overflow: hidden;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    padding: .5em .6em .4em .6em;
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+}
 
+.i-grid-header th.i-header {
+    vertical-align: bottom;
+}
 
 
 
@@ -2042,8 +2054,23 @@
 
 
 
+.i-grid-header th.i-header > .i-link {
+    display: block;
+    min-height: 18px;
+    line-height: 18px;
+    margin: -.5em -.6em -.4em 0;
+    padding: .5em .6em .4em 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+.i-grid-header th.i-with-icon .i-link {
+    margin-right: 18px;
+}
 
+.i-grid-header th.i-header .i-icon {
+    position: static;
+}
 
 
 
@@ -2057,43 +2084,15 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.i-grid td {
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    padding: .4em .6em;
+    overflow: hidden;
+    line-height: 1.6em;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+}
 
 
 
@@ -2230,9 +2229,9 @@ div.i-grid-footer, div.i-grid-header {
     border-width: 1px 0 0;
 }
 
-
-
-
+.i-filter-row > th:first-child, .i-grid tbody td:first-child, .i-grid tfoot td:first-child, .i-grid-header th.i-header:first-child {
+    border-left-width: 0;
+}
 
 
 
@@ -2241,6 +2240,7 @@ div.i-grid-footer, div.i-grid-header {
 .i-grid-toolbar:first-child, .i-grouping-header + .i-grid-toolbar {
     border-width: 0 0 1px;
 }
+
 
 
 
@@ -2288,17 +2288,17 @@ div.i-grid-footer, div.i-grid-header {
     margin-right: 1px;
 }
 
+.i-pager-numbers {
+    margin: 0 2px;
+}
 
+.i-pager-numbers .i-state-selected {
+        vertical-align: top;
+    }
 
-
-
-
-
-
-
-/*.i-pager-numbers .i-current-page {
+.i-pager-numbers .i-current-page {
         display: none;
-    }*/
+    }
 
 .i-pager-input, .i-pager-numbers li {
         float: left;
@@ -2314,8 +2314,9 @@ div.i-grid-footer, div.i-grid-header {
     padding: 0 1.333em;
 }
 
-
-
+.i-pager-numbers .i-link {
+    text-decoration: none;
+}
 
 .i-pager-numbers .i-link, .i-pager-numbers .i-state-selected, .i-pager-wrap > .i-link {
     min-width: 2em;
@@ -2336,13 +2337,13 @@ div.i-grid-footer, div.i-grid-header {
 
 
 
-
-
-
-
-
-
-
+.i-pager-numbers .i-link {
+    text-align: center;
+    line-height: 2em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1.0833em;
+}
 
 .i-pager-wrap > .i-link {
     border-style: solid;
@@ -2356,11 +2357,12 @@ div.i-grid-footer, div.i-grid-header {
     border-radius: 0;
 }
 
-
-
-
-
-
+.i-pager-numbers .i-state-selected {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    border-radius: 1.0833em;
+}
 
 
 
@@ -2378,12 +2380,12 @@ div.i-grid-footer, div.i-grid-header {
 
 
 
-
 .i-pager-sizes {
     display: inline-block;
     padding-top: 1px;
 }
-    .i-pager-sizes .i-widget.i-dropdown {
+    
+.i-pager-sizes .i-widget.i-dropdown {
         margin-top: -2px;
     }
 
@@ -2391,14 +2393,13 @@ div.i-grid-footer, div.i-grid-header {
 
 
 
-
-
-
-
-
-
-
-
+.i-header > .i-grid-filter, .i-header > .i-header-column-menu {
+    float: right;
+    margin: -.5em -.6em -.4em;
+    padding: .5em .2em .4em;
+    position: relative;
+    z-index: 1;
+}
 
 
 
@@ -2643,6 +2644,7 @@ div.i-grid-footer, div.i-grid-header {
     cursor: col-resize;
     z-index: 2;
 }
+
 
 
 
@@ -9714,14 +9716,13 @@ div.i-grid-footer, div.i-grid-header {
 
 
 
-
 .i-i-arrow-e:before {
     content: "\e601";
 }
+
 .i-i-arrow-s:before {
     content: "\e602";
 }
-
 
 .i-i-arrow-w:before {
     content: "\e603";
@@ -9730,10 +9731,10 @@ div.i-grid-footer, div.i-grid-header {
 
 
 
+
 .i-i-seek-e:before {
     content: "\e605";
 }
-
 
 
 
