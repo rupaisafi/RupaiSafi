@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>IQra :: User Interface</title>
     <link href="stylesheet/index-x.css" rel="stylesheet" />
-    <link href="stylesheet/common-grid.css" rel="stylesheet" />
+    <link href="stylesheet/grid.css" rel="stylesheet" />
     <link href="stylesheet/metro-x.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width" />
 </head>
@@ -34,8 +34,8 @@
         <div class="page-l-side"></div>
         <div class="page-c-main">
             <div class="main-wrap">
-                <div id="grid" data-role="grid" class="i-grid i-widget" style="">
-                    <div class="i-header i-grid-toolbar">
+                <div data-role="grid" class="i-grid i-widget">
+                    <div class="i-header i-grid-toolbar" style="display:none;">
                         <button> Add  </button><span>  </span>
                         <button> Edit</button><span>  </span>
                         <button> Delete </button><span>  </span>
@@ -51,34 +51,24 @@
                                 </colgroup>
                                 <thead role="rowgroup">
                                     <tr role="row">
-                                        <th id="2375ec3e-8180-4671-bc7c-d5924f0cfca2" data-index="0" data-title="Contact Name" rowspan="1" data-field="ContactName" role="columnheader" scope="col" class="i-header i-with-icon i-filterable" data-role="columnsorter">
-                                            <a href="#" class="i-grid-filter" tabindex="-1">
-                                                <span class="i-icon i-filter">Filter</span>
-                                            </a>
+                                        <th id="2375ec3e-8180-4671-bc7c-d5924f0cfca2" data-index="0" data-title="Contact Name" rowspan="1" data-field="ContactName" role="columnheader" scope="col" class="i-header" data-role="columnsorter">
                                             <a href="#" class="i-link">Contact Name</a>
                                         </th>
-                                        <th id="30ce6e8d-edb7-4912-bf51-e882a0c35029" data-index="1" data-title="Contact Title" rowspan="1" data-field="ContactTitle" role="columnheader" scope="col" class="i-header i-with-icon i-filterable" data-role="columnsorter">
-                                            <a href="#" class="i-grid-filter" tabindex="-1">
-                                                <span class="i-icon i-filter">Filter</span>
-                                            </a>
+                                        <th id="30ce6e8d-edb7-4912-bf51-e882a0c35029" data-index="1" data-title="Contact Title" rowspan="1" data-field="ContactTitle" role="columnheader" scope="col" class="i-header" data-role="columnsorter">
                                             <a href="#" class="i-link">Contact Title</a>
                                         </th>
-                                        <th id="6f015bd5-7938-4752-9b30-b048ae0a0c87" data-index="2" data-title="Company Name" rowspan="1" data-field="CompanyName" role="columnheader" scope="col" class="i-header i-with-icon i-filterable" data-role="columnsorter">
-                                            <a href="#" class="i-grid-filter" tabindex="-1">
-                                                <span class="i-icon i-filter">Filter</span>
-                                            </a>
+                                        <th id="6f015bd5-7938-4752-9b30-b048ae0a0c87" data-index="2" data-title="Company Name" rowspan="1" data-field="CompanyName" role="columnheader" scope="col" class="i-header" data-role="columnsorter">
                                             <a href="#" class="i-link">Company Name</a>
                                         </th>
-                                        <th id="522bbe7b-fe89-403c-a492-b606cb72f084" data-index="3" data-title="Country Name" rowspan="1" data-field="Country" role="columnheader" scope="col" class="i-header i-with-icon i-filterable" data-role="columnsorter">
-                                            <a href="#" class="i-grid-filter" tabindex="-1">
-                                                <span class="i-icon i-filter">Filter</span>
-                                            </a>
+                                        <th id="522bbe7b-fe89-403c-a492-b606cb72f084" data-index="3" data-title="Country Name" rowspan="1" data-field="Country" role="columnheader" scope="col" class="i-header" data-role="columnsorter">
                                             <a href="#" class="i-link">Country Name</a>
                                         </th>
                                     </tr>
                                 </thead>
                             </table>
-                            <div class="i-resize-handle" style="top: 0px; left: 645px; height: 32px; width: 9px; display: none;"><div class="i-resize-handle-inner"></div></div>
+                            <div class="i-resize-handle" style="top: 0px; left: 645px; height: 32px; width: 9px; display: none;">
+                                <div class="i-resize-handle-inner"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="i-grid-content i-auto-scrollable">
@@ -162,13 +152,13 @@
                         </a>
                         <span class="i-pager-sizes i-label">
                             <span style="" title="" class="i-widget i-dropdown i-header" unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="" aria-disabled="false" aria-readonly="false" aria-busy="false" aria-activedescendant="6003d4ac-3f13-40d6-b83c-e9194ace5412">
-                                <span class="i-dropdown-wrap i-state-default" unselectable="on"><span class="i-input" unselectable="on">8</span><span class="i-select" unselectable="on"><span class="i-icon i-i-arrow-s" unselectable="on">select</span></span></span><select data-role="dropdownlist" style="display: none;">
+                                <select data-role="dropdownlist">
                                     <option value="all">All</option>
                                     <option value="5">5</option>
                                     <option value="10">10</option>
                                     <option value="20">20</option>
                                 </select>
-                            </span>PerPage
+                            </span> 
                         </span>
                         <a title="Refresh" class="i-pager-refresh i-link" href="#">
                             <span class="i-icon i-i-refresh">Refresh</span>
